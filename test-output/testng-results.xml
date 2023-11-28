@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="26" passed="18" failed="8" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-28T16:13:18 IST" name="Default suite" finished-at="2023-11-28T16:25:28 IST" duration-ms="729270">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-11-28T16:13:18 IST" name="Default test" finished-at="2023-11-28T16:25:28 IST" duration-ms="729270">
+      <class name="com.testRunnersTestNG.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:13:18 IST" name="setUpClass" finished-at="2023-11-28T16:13:20 IST" duration-ms="1908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:13:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-28T16:13:47 IST" duration-ms="27043" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate elements in sign up page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up page of the customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [fbfcd240-d183-4860-893c-131feb6c443c, findElement {using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/com.horcrux.svg.SvgView}]
+Capabilities {appium:app: C:\Users\Kishor\Downloads\a..., appium:appPackage: com.shieldcustomer, appium:automationName: Appium, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Kishor\Downloads\a..., automationName: Appium, deviceName: nokia c3, platformName: ANDROID, platformVersion: 10.0, resetKeyboard: false, unicodeKeyboard: false}, appium:deviceApiLevel: 29, appium:deviceManufacturer: HMD Global, appium:deviceModel: Nokia C3, appium:deviceName: 300E6005N091402133, appium:deviceScreenDensity: 280, appium:deviceScreenSize: 720x1440, appium:deviceUDID: 300E6005N091402133, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 1.75, appium:platformVersion: 10, appium:resetKeyboard: false, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:unicodeKeyboard: false, appium:viewportRect: {height: 1300, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: fbfcd240-d183-4860-893c-131feb6c443c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [fbfcd240-d183-4860-893c-131feb6c443c, findElement {using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/com.horcrux.svg.SvgView}]
+Capabilities {appium:app: C:\Users\Kishor\Downloads\a..., appium:appPackage: com.shieldcustomer, appium:automationName: Appium, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Kishor\Downloads\a..., automationName: Appium, deviceName: nokia c3, platformName: ANDROID, platformVersion: 10.0, resetKeyboard: false, unicodeKeyboard: false}, appium:deviceApiLevel: 29, appium:deviceManufacturer: HMD Global, appium:deviceModel: Nokia C3, appium:deviceName: 300E6005N091402133, appium:deviceScreenDensity: 280, appium:deviceScreenSize: 720x1440, appium:deviceUDID: 300E6005N091402133, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 1.75, appium:platformVersion: 10, appium:resetKeyboard: false, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:unicodeKeyboard: false, appium:viewportRect: {height: 1300, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: fbfcd240-d183-4860-893c-131feb6c443c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy44.isDisplayed(Unknown Source)
+at com.pages.A0003_Sign_up_page_objects.back_button_is_displayed(A0003_Sign_up_page_objects.java:97)
+at stepDefinitions.customer.A0003_Sign_up_page.verify_that_back_button_should_be_displayed_in_the_sign_up_page(A0003_Sign_up_page.java:46)
+at ✽.Verify that back button should be displayed in the sign up page(file:///C:/Users/Kishor/Desktop/Appium_project/appium_shield/src/test/resources/features/customer/A0003_sign_up_page.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:13:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-28T16:14:10 IST" duration-ms="22814" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate back button in sign up page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up page of the customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [0b6af132-ab43-423d-82e5-250b037c244f, findElement {using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/com.horcrux.svg.SvgView}]
+Capabilities {appium:app: C:\Users\Kishor\Downloads\a..., appium:appPackage: com.shieldcustomer, appium:automationName: Appium, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Kishor\Downloads\a..., automationName: Appium, deviceName: nokia c3, platformName: ANDROID, platformVersion: 10.0, resetKeyboard: false, unicodeKeyboard: false}, appium:deviceApiLevel: 29, appium:deviceManufacturer: HMD Global, appium:deviceModel: Nokia C3, appium:deviceName: 300E6005N091402133, appium:deviceScreenDensity: 280, appium:deviceScreenSize: 720x1440, appium:deviceUDID: 300E6005N091402133, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 1.75, appium:platformVersion: 10, appium:resetKeyboard: false, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:unicodeKeyboard: false, appium:viewportRect: {height: 1300, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 0b6af132-ab43-423d-82e5-250b037c244f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [0b6af132-ab43-423d-82e5-250b037c244f, findElement {using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/com.horcrux.svg.SvgView}]
+Capabilities {appium:app: C:\Users\Kishor\Downloads\a..., appium:appPackage: com.shieldcustomer, appium:automationName: Appium, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Kishor\Downloads\a..., automationName: Appium, deviceName: nokia c3, platformName: ANDROID, platformVersion: 10.0, resetKeyboard: false, unicodeKeyboard: false}, appium:deviceApiLevel: 29, appium:deviceManufacturer: HMD Global, appium:deviceModel: Nokia C3, appium:deviceName: 300E6005N091402133, appium:deviceScreenDensity: 280, appium:deviceScreenSize: 720x1440, appium:deviceUDID: 300E6005N091402133, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 1.75, appium:platformVersion: 10, appium:resetKeyboard: false, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:unicodeKeyboard: false, appium:viewportRect: {height: 1300, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 0b6af132-ab43-423d-82e5-250b037c244f
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy44.click(Unknown Source)
+at com.pages.A0003_Sign_up_page_objects.back_button_is_clicked(A0003_Sign_up_page_objects.java:111)
+at stepDefinitions.customer.A0003_Sign_up_page.user_click_on_the_back_button_in_the_sign_up_page(A0003_Sign_up_page.java:313)
+at ✽.user click on the back button in the sign up page(file:///C:/Users/Kishor/Desktop/Appium_project/appium_shield/src/test/resources/features/customer/A0003_sign_up_page.feature:42)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:14:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-28T16:14:32 IST" duration-ms="21613" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate need help link in sign up page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up page of the customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [79c96cfd-4c9d-484b-a432-4d93c34b48b5, findElement {using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView}]
+Capabilities {appium:app: C:\Users\Kishor\Downloads\a..., appium:appPackage: com.shieldcustomer, appium:automationName: Appium, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Kishor\Downloads\a..., automationName: Appium, deviceName: nokia c3, platformName: ANDROID, platformVersion: 10.0, resetKeyboard: false, unicodeKeyboard: false}, appium:deviceApiLevel: 29, appium:deviceManufacturer: HMD Global, appium:deviceModel: Nokia C3, appium:deviceName: 300E6005N091402133, appium:deviceScreenDensity: 280, appium:deviceScreenSize: 720x1440, appium:deviceUDID: 300E6005N091402133, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 1.75, appium:platformVersion: 10, appium:resetKeyboard: false, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:unicodeKeyboard: false, appium:viewportRect: {height: 1300, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 79c96cfd-4c9d-484b-a432-4d93c34b48b5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [79c96cfd-4c9d-484b-a432-4d93c34b48b5, findElement {using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView}]
+Capabilities {appium:app: C:\Users\Kishor\Downloads\a..., appium:appPackage: com.shieldcustomer, appium:automationName: Appium, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Kishor\Downloads\a..., automationName: Appium, deviceName: nokia c3, platformName: ANDROID, platformVersion: 10.0, resetKeyboard: false, unicodeKeyboard: false}, appium:deviceApiLevel: 29, appium:deviceManufacturer: HMD Global, appium:deviceModel: Nokia C3, appium:deviceName: 300E6005N091402133, appium:deviceScreenDensity: 280, appium:deviceScreenSize: 720x1440, appium:deviceUDID: 300E6005N091402133, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 1.75, appium:platformVersion: 10, appium:resetKeyboard: false, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:unicodeKeyboard: false, appium:viewportRect: {height: 1300, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 79c96cfd-4c9d-484b-a432-4d93c34b48b5
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy44.isDisplayed(Unknown Source)
+at com.pages.A0003_Sign_up_page_objects.need_help_link_text_is_clickable(A0003_Sign_up_page_objects.java:127)
+at stepDefinitions.customer.A0003_Sign_up_page.user_click_on_the_need_help_text_link_sign_up_page(A0003_Sign_up_page.java:344)
+at ✽.user click on the need help text link sign up page(file:///C:/Users/Kishor/Desktop/Appium_project/appium_shield/src/test/resources/features/customer/A0003_sign_up_page.feature:48)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:14:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-28T16:15:30 IST" duration-ms="57822" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate new sign up user redirected to the home page via validating otp"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up page of the customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:15:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-28T16:15:58 IST" duration-ms="28476" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate get otp button with valid first name with upto max length in sign up page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up page of the customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:15:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-28T16:16:25 IST" duration-ms="27300" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate get otp button with valid last name with upto max length in sign up page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up page of the customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:16:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-28T16:16:53 IST" duration-ms="27297" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate get otp button with both valid upto max length in sign up page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up page of the customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:16:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-28T16:17:19 IST" duration-ms="26693" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate get otp button with all invalid min text in test data in sign up page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up page of the customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:17:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-28T16:17:46 IST" duration-ms="26473" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate get otp button with invalid min text in first name and last name in sign up page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up page of the customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at org.testng.Assert.assertEquals(Assert.java:829)
+at stepDefinitions.customer.A0003_Sign_up_page.verify_that_get_otp_button_should_not_be_clickable_with_invalid_test_data_in_the_sign_up_page(A0003_Sign_up_page.java:484)
+at ✽.Verify that get otp button should not be clickable with invalid test data in the sign up page(file:///C:/Users/Kishor/Desktop/Appium_project/appium_shield/src/test/resources/features/customer/A0003_sign_up_page.feature:94)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:17:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-28T16:18:13 IST" duration-ms="26957" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate get otp button with invalid min text in first name and mobile number in sign up page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up page of the customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:18:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-28T16:18:41 IST" duration-ms="27848" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate get otp button with invalid min text in last name and mobile number in sign up page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up page of the customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:18:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-28T16:19:14 IST" duration-ms="32944" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate get otp button with all invalid min text in first name and mobile number in sign up page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up page of the customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.EditText[1]' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.EditText[1]' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at com.qa.utility.ElementUtil.wait_for_element_to_be_displayed(ElementUtil.java:160)
+at com.pages.A0003_Sign_up_page_objects.first_name_user_field_is_displayed(A0003_Sign_up_page_objects.java:159)
+at stepDefinitions.customer.A0003_Sign_up_page.verify_that_user_is_on_the_sign_up_page_from_the_first_landing_page(A0003_Sign_up_page.java:460)
+at ✽.Verify that user is on the sign up page from the first landing page(file:///C:/Users/Kishor/Desktop/Appium_project/appium_shield/src/test/resources/features/customer/A0003_sign_up_page.feature:110)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [a009eccb-ccb9-4637-a712-739a8ee4ce96, findElement {using=xpath, value=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.EditText[1]}]
+Capabilities {appium:app: C:\Users\Kishor\Downloads\a..., appium:appPackage: com.shieldcustomer, appium:automationName: Appium, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Kishor\Downloads\a..., automationName: Appium, deviceName: nokia c3, platformName: ANDROID, platformVersion: 10.0, resetKeyboard: false, unicodeKeyboard: false}, appium:deviceApiLevel: 29, appium:deviceManufacturer: HMD Global, appium:deviceModel: Nokia C3, appium:deviceName: 300E6005N091402133, appium:deviceScreenDensity: 280, appium:deviceScreenSize: 720x1440, appium:deviceUDID: 300E6005N091402133, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 1.75, appium:platformVersion: 10, appium:resetKeyboard: false, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:unicodeKeyboard: false, appium:viewportRect: {height: 1300, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: a009eccb-ccb9-4637-a712-739a8ee4ce96
+at jdk.internal.reflect.GeneratedConstructorAccessor33.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy44.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+at com.qa.utility.ElementUtil.wait_for_element_to_be_displayed(ElementUtil.java:160)
+at com.pages.A0003_Sign_up_page_objects.first_name_user_field_is_displayed(A0003_Sign_up_page_objects.java:159)
+at stepDefinitions.customer.A0003_Sign_up_page.verify_that_user_is_on_the_sign_up_page_from_the_first_landing_page(A0003_Sign_up_page.java:460)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:116)
+at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
+at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:113)
+at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:19:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-28T16:19:41 IST" duration-ms="27681" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate get otp button with invalid min text in mobile number in sign up page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up page of the customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:19:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-28T16:20:10 IST" duration-ms="28823" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate get otp button with invalid min text in last name in sign up page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up page of the customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at org.testng.Assert.assertEquals(Assert.java:829)
+at stepDefinitions.customer.A0003_Sign_up_page.verify_that_get_otp_button_should_not_be_clickable_with_invalid_test_data_in_the_sign_up_page(A0003_Sign_up_page.java:484)
+at ✽.Verify that get otp button should not be clickable with invalid test data in the sign up page(file:///C:/Users/Kishor/Desktop/Appium_project/appium_shield/src/test/resources/features/customer/A0003_sign_up_page.feature:124)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:20:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-28T16:20:37 IST" duration-ms="26750" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate get otp button with invalid min text in first name in sign up page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up page of the customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at org.testng.Assert.assertEquals(Assert.java:829)
+at stepDefinitions.customer.A0003_Sign_up_page.verify_that_get_otp_button_should_not_be_clickable_with_invalid_test_data_in_the_sign_up_page(A0003_Sign_up_page.java:484)
+at ✽.Verify that get otp button should not be clickable with invalid test data in the sign up page(file:///C:/Users/Kishor/Desktop/Appium_project/appium_shield/src/test/resources/features/customer/A0003_sign_up_page.feature:130)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:20:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-28T16:21:04 IST" duration-ms="27474" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate get otp button as invalid first name with numbers in sign up page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up page of the customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:21:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-28T16:21:30 IST" duration-ms="25614" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate get otp button as invalid last name with numbers in sign up page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up page of the customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:21:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-28T16:21:57 IST" duration-ms="26989" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate get otp button as invalid mobile number with letters in sign up page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up page of the customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:21:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-28T16:22:22 IST" duration-ms="24583" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate get otp button as invalid first name with special chars in sign up page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up page of the customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:22:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-28T16:22:47 IST" duration-ms="25145" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate get otp button as invalid last name with with special chars in sign up page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up page of the customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:22:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-28T16:23:11 IST" duration-ms="24688" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate get otp button as invalid mobile number with special chars in sign up page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up page of the customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:23:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-28T16:23:37 IST" duration-ms="25106" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate get otp button with all empty spaces in user fields in sign up page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up page of the customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:23:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-28T16:24:03 IST" duration-ms="26262" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate get otp button as empty first name with special chars in sign up page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up page of the customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:24:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-28T16:24:30 IST" duration-ms="27551" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate get otp button as empty last name with with special chars in sign up page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up page of the customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:24:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-28T16:24:55 IST" duration-ms="24905" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate get otp button as empty mobile number with special chars in sign up page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up page of the customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:24:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-11-28T16:25:15 IST" duration-ms="19955" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate log in link sign up page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Sign up page of the customer application]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[Locator Strategy 'link text' is not supported for this session
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [f45a788b-2076-4aea-b10d-2572a99ecb5c, findElement {using=link text, value=Login}]
+Capabilities {appium:app: C:\Users\Kishor\Downloads\a..., appium:appPackage: com.shieldcustomer, appium:automationName: Appium, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Kishor\Downloads\a..., automationName: Appium, deviceName: nokia c3, platformName: ANDROID, platformVersion: 10.0, resetKeyboard: false, unicodeKeyboard: false}, appium:deviceApiLevel: 29, appium:deviceManufacturer: HMD Global, appium:deviceModel: Nokia C3, appium:deviceName: 300E6005N091402133, appium:deviceScreenDensity: 280, appium:deviceScreenSize: 720x1440, appium:deviceUDID: 300E6005N091402133, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 1.75, appium:platformVersion: 10, appium:resetKeyboard: false, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:unicodeKeyboard: false, appium:viewportRect: {height: 1300, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: f45a788b-2076-4aea-b10d-2572a99ecb5c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: Locator Strategy 'link text' is not supported for this session
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [f45a788b-2076-4aea-b10d-2572a99ecb5c, findElement {using=link text, value=Login}]
+Capabilities {appium:app: C:\Users\Kishor\Downloads\a..., appium:appPackage: com.shieldcustomer, appium:automationName: Appium, appium:databaseEnabled: false, appium:desired: {app: C:\Users\Kishor\Downloads\a..., automationName: Appium, deviceName: nokia c3, platformName: ANDROID, platformVersion: 10.0, resetKeyboard: false, unicodeKeyboard: false}, appium:deviceApiLevel: 29, appium:deviceManufacturer: HMD Global, appium:deviceModel: Nokia C3, appium:deviceName: 300E6005N091402133, appium:deviceScreenDensity: 280, appium:deviceScreenSize: 720x1440, appium:deviceUDID: 300E6005N091402133, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 1.75, appium:platformVersion: 10, appium:resetKeyboard: false, appium:statBarHeight: 56, appium:takesScreenshot: true, appium:unicodeKeyboard: false, appium:viewportRect: {height: 1300, left: 0, top: 56, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: f45a788b-2076-4aea-b10d-2572a99ecb5c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy44.isEnabled(Unknown Source)
+at com.pages.A0003_Sign_up_page_objects.log_in_link_is_clickable(A0003_Sign_up_page_objects.java:440)
+at stepDefinitions.customer.A0003_Sign_up_page.user_click_on_the_log_in_link_from_the_sign_up_page(A0003_Sign_up_page.java:520)
+at ✽.User click on the log in link from the sign up page(file:///C:/Users/Kishor/Desktop/Appium_project/appium_shield/src/test/resources/features/customer/A0003_sign_up_page.feature:198)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.testRunnersTestNG.TestNGTestRunner@5d908d47]" started-at="2023-11-28T16:25:15 IST" name="tearDownClass" finished-at="2023-11-28T16:25:28 IST" duration-ms="12426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.testRunnersTestNG.TestNGTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
